@@ -70,7 +70,7 @@ $(document).ready(function(){
 							curCities = item.cityList;
 						}
 					});
-					/*
+					
 					var curPromise = [];
 					curCities.forEach(function(item){
 						curPromise.push(loadData(item.cid));
@@ -99,11 +99,11 @@ $(document).ready(function(){
 						renderContentPanel(list);
 
 					});
-					*/
+					
 
-					var list = '[{"weaid":"50","cityno":"chengde","citynm":"承德","cityid":"101090402","aqi":"25","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":25},{"weaid":"52","cityno":"qinhuangdao","citynm":"秦皇岛","cityid":"101091101","aqi":"28","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":28},{"weaid":"51","cityno":"tangshan","citynm":"唐山","cityid":"101090501","aqi":"32","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":32},{"weaid":"53","cityno":"cangzhou","citynm":"沧州","cityid":"101090701","aqi":"35","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":35},{"weaid":"54","cityno":"hengshui","citynm":"衡水","cityid":"101090801","aqi":"39","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":39},{"weaid":"58","cityno":"langfang","citynm":"廊坊","cityid":"101090601","aqi":"40","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":40},{"weaid":"57","cityno":"baoding","citynm":"保定","cityid":"101090201","aqi":"44","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":44},{"weaid":"56","cityno":"handan","citynm":"邯郸","cityid":"101091001","aqi":"51","aqi_scope":"50-100","aqi_levid":"2","aqi_levnm":"良","aqi_remark":"可以正常进行室外活动","aqiV":51},{"weaid":"48","cityno":"shijiazhuang","citynm":"石家庄","cityid":"101090101","aqi":"54","aqi_scope":"50-100","aqi_levid":"2","aqi_levnm":"良","aqi_remark":"可以正常进行室外活动","aqiV":54},{"weaid":"55","cityno":"xingtai","citynm":"邢台","cityid":"101090901","aqi":"56","aqi_scope":"50-100","aqi_levid":"2","aqi_levnm":"良","aqi_remark":"可以正常进行室外活动","aqiV":56},{"weaid":"49","cityno":"zhangjiakou","citynm":"张家口","cityid":"101090301","aqi":"63","aqi_scope":"50-100","aqi_levid":"2","aqi_levnm":"良","aqi_remark":"可以正常进行室外活动","aqiV":63}]';
-					list = JSON.parse(list);
-					renderContentPanel(list);
+					// var list = '[{"weaid":"50","cityno":"chengde","citynm":"承德","cityid":"101090402","aqi":"25","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":25},{"weaid":"52","cityno":"qinhuangdao","citynm":"秦皇岛","cityid":"101091101","aqi":"28","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":28},{"weaid":"51","cityno":"tangshan","citynm":"唐山","cityid":"101090501","aqi":"32","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":32},{"weaid":"53","cityno":"cangzhou","citynm":"沧州","cityid":"101090701","aqi":"35","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":35},{"weaid":"54","cityno":"hengshui","citynm":"衡水","cityid":"101090801","aqi":"39","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":39},{"weaid":"58","cityno":"langfang","citynm":"廊坊","cityid":"101090601","aqi":"40","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":40},{"weaid":"57","cityno":"baoding","citynm":"保定","cityid":"101090201","aqi":"44","aqi_scope":"0-50","aqi_levid":"1","aqi_levnm":"优","aqi_remark":"参加户外活动呼吸清新空气","aqiV":44},{"weaid":"56","cityno":"handan","citynm":"邯郸","cityid":"101091001","aqi":"51","aqi_scope":"50-100","aqi_levid":"2","aqi_levnm":"良","aqi_remark":"可以正常进行室外活动","aqiV":51},{"weaid":"48","cityno":"shijiazhuang","citynm":"石家庄","cityid":"101090101","aqi":"54","aqi_scope":"50-100","aqi_levid":"2","aqi_levnm":"良","aqi_remark":"可以正常进行室外活动","aqiV":54},{"weaid":"55","cityno":"xingtai","citynm":"邢台","cityid":"101090901","aqi":"56","aqi_scope":"50-100","aqi_levid":"2","aqi_levnm":"良","aqi_remark":"可以正常进行室外活动","aqiV":56},{"weaid":"49","cityno":"zhangjiakou","citynm":"张家口","cityid":"101090301","aqi":"63","aqi_scope":"50-100","aqi_levid":"2","aqi_levnm":"良","aqi_remark":"可以正常进行室外活动","aqiV":63}]';
+					// list = JSON.parse(list);
+					// renderContentPanel(list);
 				}else{
 					// city nodes clicked
 					// step1: get current date and calculate the previous 7 days
